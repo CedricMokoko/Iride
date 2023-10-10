@@ -1,0 +1,128 @@
+:root{
+  font-size: 50%;
+}
+
+/* Header */
+
+header{
+  flex-direction: column;
+  align-items: stretch ;
+  line-height: 2rem;
+}
+
+header .logo{
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  margin: 0 auto;
+}
+
+header ul{
+  flex-direction: column;
+}
+
+header ul li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+header ul li:last-child{
+  display: none;
+  visibility: hidden;
+}
+
+/* Nav */
+
+nav a{
+  padding: 0 1.8rem;
+  font-size: 1.3rem;
+}
+
+nav{
+  overflow-x: scroll;
+  flex-direction: row;
+}
+
+/* Showcase */
+
+.showcase{
+  grid-template-columns: 1fr;
+  margin-bottom: 1rem;
+
+}
+
+.showcase
+article:first-child{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.showcase
+article:last-child{
+  display: none;
+}
+
+/* Ads */
+
+.ads{
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-area: none;
+}
+
+.ads img{
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+}
+
+
+.ads h1{
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+  font-size: 2rem;
+  padding-left: 1rem;
+  align-self: center;
+}
+
+.ads p{
+  display: none;
+  visibility: hidden;
+}
+
+.ads form{
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+  align-self: last baseline;
+  justify-self: center;
+  padding: 1rem;
+}
+
+::placeholder{
+  color: white;
+}
+
+.ads form input{
+  background: transparent;
+  border-bottom: 1px solid var(--dark);
+}
+
+/* Content */
+
+.popular{
+  display: none;
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
